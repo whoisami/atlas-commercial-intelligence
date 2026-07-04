@@ -1,0 +1,3 @@
+- Evidence based
+- Commission first
+- No stock in phase 1

@@ -1,0 +1,4 @@
+- [ ] Choose product family
+- [ ] Build Top30 manufacturers
+- [ ] Elite5 shortlist
+- [ ] Contact first manufacturer
