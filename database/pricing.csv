@@ -1,0 +1,2 @@
+pricing_id,product_id,manufacturer_id,buyer_id,product_specification,quantity,unit,price,currency,price_basis,incoterm,origin,destination,quote_or_observation_date,valid_until,landed_cost_estimate,target_sell_price,gross_margin_percent,confidence_0_100,status,source_urls,verified_date,owner,notes
+
