@@ -55,3 +55,11 @@
 - **Controls added:** absolute no-research/no-browsing mandate, binary YES/NO pursuit decisions, five-factor confidence score, commercial-model selection, resource caps, kill rules, anti-analysis-paralysis controls and milestone accountability.
 - **Decision support:** Standardized `decisions/DECISION_XXX.md`, expanded the decision registry, and added CEO outcome, resource-allocation, Top 3 and next-action dashboard sections.
 - **Outcome:** Atlas CEO converts accepted agent evidence into one focused commercial decision and executable next action; missing evidence is delegated, never researched or invented.
+
+## Execution Summary — Learning Intelligence Agent Upgrade
+
+- **Completed:** 2026-07-05
+- **Scope:** Upgraded the seven Learning Intelligence operating contracts into Atlas's production institutional-memory and commercial-improvement system.
+- **Controls added:** VERIFIED/ESTIMATED/HYPOTHESIS/UNKNOWN evidence states, mandatory lesson schema, weighted confidence scoring, pattern maturity and retirement, cohort-safe conversion metrics, alternative-explanation testing and governed playbook change gates.
+- **Knowledge support:** Standardized the lessons and commercial-pattern registers; added successful outreach, failed outreach and pricing-pattern registers; added six controlled commercial playbooks with evidence, measurement and rollback requirements.
+- **Outcome:** Learning Intelligence converts completed commercial outcomes into one measurable improvement or bounded test; it does not infer missing outcomes, authorize outreach or alter another agent's mandate.

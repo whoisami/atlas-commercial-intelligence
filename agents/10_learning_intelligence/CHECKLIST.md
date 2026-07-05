@@ -1,29 +1,56 @@
 # Checklist — Learning Intelligence
 
-## Pre-execution
+## Scope and evidence
 
-- [ ] Project, sprint and decision question are explicit.
-- [ ] Required upstream reports are ACCEPTED or limitations are stated.
-- [ ] Canonical schemas and existing IDs were reviewed.
-- [ ] Inclusion, exclusion and evidence thresholds are defined.
-- [ ] No external contact or state-changing action is implied without authorization.
+- [ ] Completed action, cohort, sprint and evidence cutoff are explicit.
+- [ ] Original prediction and intended outcome were reconstructed without hindsight.
+- [ ] Observed outcome is supported by a dated record or marked `UNKNOWN`.
+- [ ] Duplicate, bounced, test, open and stale records were handled explicitly.
+- [ ] Every decisive claim cites a repository record or source URL.
+- [ ] VERIFIED, ESTIMATED, HYPOTHESIS and UNKNOWN are used correctly.
 
-## Post-execution
+## Lesson quality
 
-- [ ] Report uses the next sequential ID and correct domain.
-- [ ] Every decisive claim has a direct source.
-- [ ] Facts, inferences, assumptions and unknowns are distinguishable.
-- [ ] GO/WATCH/NO-GO logic states the action authorized.
-- [ ] Delta rows use stable IDs and include source and verification metadata.
-- [ ] Proposed dashboard values cite the report.
-- [ ] Next actions have an owner and due date or explicitly say UNKNOWN.
+- [ ] Every lesson has ID, Category, Observation, Evidence, Evidence State, Confidence Score, Commercial Impact, Recommended Action, Date, Related Product, Related Manufacturer, Related Buyer and Related Sprint.
+- [ ] Confidence is scored against all six weighted factors.
+- [ ] Sample size, scope and limitations are explicit.
+- [ ] Alternative explanations and contradictory cases were considered.
+- [ ] Country and industry observations are cohort-specific and non-stereotyping.
+- [ ] Correlation is not presented as causation.
+- [ ] Maturity is ONE-CASE, EMERGING, VALIDATED or RETIRED.
 
-## Quality
+## Commercial metrics
 
-- [ ] No names, emails, prices, certifications or relationships were invented.
-- [ ] First-party evidence was used for identity and authorization.
-- [ ] Contradictory evidence and channel conflicts were checked.
-- [ ] Search-result pages are not cited as final evidence.
-- [ ] Duplicate entities and stale sources were checked.
-- [ ] Writing is decision-first, concise and commercially specific.
+- [ ] Response rate states numerator, denominator, cohort and time window.
+- [ ] Meeting, proposal, order, commission and repeat-business conversions use the defined funnel stages.
+- [ ] Average sales cycle and response time disclose population and open-record treatment.
+- [ ] Country, industry and product-family rankings disclose volume and success definition.
+- [ ] Missing denominators produce `UNKNOWN`, not zero.
+
+## Knowledge and playbooks
+
+- [ ] Relevant knowledge registers were updated without duplicating personal correspondence.
+- [ ] Stable IDs and revision history were preserved.
+- [ ] Every playbook proposal has evidence, scope, owner, metric, test window, review trigger and rollback condition.
+- [ ] GO changes meet the confidence and evidence gate.
+- [ ] WATCH hypotheses do not replace the current standard.
+- [ ] Changes to another agent remain recommendations for Atlas CEO.
+
+## Report and synchronization
+
+- [ ] Report uses the next `intelligence/learning/RXXX.md` ID.
+- [ ] All 18 required report sections are present.
+- [ ] Top Lessons, Immediate Improvements, Highest Commercial Opportunity, Highest Commercial Risk, Recommended Process Changes and Next Sprint Improvements appear immediately before COMMERCIAL ACTION.
+- [ ] Final COMMERCIAL ACTION has Decision, Confidence Score, Expected Business Impact, Knowledge Confidence and Next Improvement.
+- [ ] Learning-owned dashboard values cite the report.
+- [ ] `workspace/current_sprint.md` was appended, not overwritten.
+
+## Final validation
+
+- [ ] All Markdown and internal links validate.
+- [ ] All rates and scores recalculate correctly.
+- [ ] No lesson, outcome, price, contact or causal claim was invented.
+- [ ] Sensitive content was minimized and authorized.
+- [ ] No external contact or commercial commitment occurred.
+- [ ] No other agent was modified.
 

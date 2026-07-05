@@ -41,6 +41,30 @@ This is the single source of truth for portfolio status. Specialist agents propo
 | Representation proposals | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
 | Signed agreements | 0 | 1 | — | UNKNOWN | Atlas CEO |
 
+## Learning Intelligence
+
+All rates require a reliable numerator, denominator, cohort and time window. Missing outcome data remains `UNKNOWN`, never zero.
+
+| Metric | Current | Trend | Source report | Owner |
+|---|---:|---|---|---|
+| VERIFIED lessons | 0 | — | UNKNOWN | Learning Intelligence |
+| ESTIMATED lessons | 0 | — | UNKNOWN | Learning Intelligence |
+| Hypotheses under test | 0 | — | UNKNOWN | Learning Intelligence |
+| Validated commercial patterns | 0 | — | UNKNOWN | Learning Intelligence |
+| Process changes awaiting review | 0 | — | UNKNOWN | Learning Intelligence |
+| Repeated avoidable mistakes | 0 | — | UNKNOWN | Learning Intelligence |
+| Response rate | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Meeting conversion | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Proposal conversion | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Order conversion | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Commission conversion | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Repeat business rate | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Average sales cycle | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Average response time | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Most successful country cohort | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Most successful industry cohort | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+| Most successful product-family cohort | UNKNOWN | — | UNKNOWN | Learning Intelligence |
+
 ## Current Decisions
 
 | Decision ID | Subject | Pursue | Status | Confidence | Date | Review trigger |
