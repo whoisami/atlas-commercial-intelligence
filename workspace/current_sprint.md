@@ -31,3 +31,11 @@
 - **Controls added:** VERIFIED/ESTIMATED/UNKNOWN evidence states, normalized price comparisons, landed-cost and gross-to-net bridges, five-model analysis, cash/working-capital controls, scenario and break-even testing, six-factor Atlas Score and hard GO gates.
 - **Data support:** Extended `database/pricing.csv` with manufacturer, freight, customs, market-price, commission, margin, cash-flow, commercial-model, scoring and evidence-quality fields.
 - **Outcome:** GO identifies a financially viable model for controlled commercial validation; it does not authorize a quote, purchase, inventory or commitment.
+
+## Execution Summary — Competition Intelligence Agent Upgrade
+
+- **Completed:** 2026-07-05
+- **Scope:** Upgraded the seven Competition Intelligence operating contracts into Atlas's production Turkish market-entry decision system.
+- **Controls added:** VERIFIED/ESTIMATED/UNKNOWN market claims, competitive-arena boundaries, market/import/local-production discipline, first-party channel verification, buyer-alternative mapping, six entry-model comparisons, evidence-linked SWOT, inverted burden scoring and hard GO gates.
+- **Data support:** Extended `database/products.csv` with competition and entry-strategy fields and `database/manufacturers.csv` with Turkey competitive-presence fields while preserving upstream scores.
+- **Outcome:** GO identifies a viable, evidence-backed market-entry strategy; it does not authorize contact, inventory, spending, exclusivity or agreement.
