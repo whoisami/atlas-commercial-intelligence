@@ -1,23 +1,90 @@
 # Inputs — Manufacturer Due Diligence
 
-## Required inputs
+## Mandatory Manufacturer Hunter handoff
 
-- intelligence/manufacturers/R###.md
-- database/manufacturers.csv
-- database/contacts.csv
-- database/decisions.csv
-- official certificates and replies
-- workspace/current_sprint.md
+- Accepted `intelligence/manufacturers/RXXX.md`
+- Manufacturer Hunter GO status
+- Stable manufacturer ID
+- Legal/trading name and website
+- Product and factory evidence
+- Product Intelligence fit
+- Certifications
+- Export evidence and countries
+- Turkey-channel finding
+- Official contact route
+- Atlas partnership hypothesis
+- First-message angle
+- Risk note
+- Exact diligence questions
+- Source packet and verification dates
 
-## Upstream agents
+If the candidate is WATCH or NO-GO, due diligence proceeds only with an explicit Atlas CEO scope.
 
-Read accepted reports from the agents that own the required inputs. Do not treat a DRAFT report as canonical.
+## Product and project context
 
-## Input checks
+- Accepted `intelligence/products/RXXX.md`
+- `workspace/active_project.md`
+- `workspace/current_sprint.md`
+- `dashboard/CEO_DASHBOARD.md`
+- `database/manufacturers.csv`
+- `database/contacts.csv`
+- `database/decisions.csv`
 
-- Confirm project and sprint scope.
-- Confirm report IDs and evidence cutoff.
-- Confirm canonical IDs before creating updates.
-- Confirm sources are accessible and current enough for the decision.
-- Record missing inputs as blockers or `UNKNOWN`; do not silently fill gaps.
+## Required authoritative sources
+
+Use jurisdiction-appropriate sources, including:
+
+- Official corporate registries
+- Beneficial ownership or group filings where lawful and available
+- Insolvency and court records where relevant and lawful
+- Official financial filings or credible credit evidence
+- Certificate issuer or accreditation databases
+- Official sanctions lists and consolidated screening tools
+- Export-control and trade-restriction authorities
+- Customs and tariff authorities
+- Manufacturer factory, contact, partner and certification pages
+- Official distributor locators
+- National trade agencies and industry associations
+- Credible adverse-media and reputation sources
+
+## Required verification fields
+
+Obtain or mark `UNKNOWN`:
+
+- Legal existence and active status
+- Registration and jurisdiction
+- Ownership and group structure
+- Year founded/incorporated
+- Employee estimate
+- Financial credibility
+- Manufacturer status
+- Factory existence and capability
+- Product consistency
+- Certifications and validity
+- International customers
+- Export markets
+- Export capability
+- Website quality
+- LinkedIn presence
+- Response channels
+- Export department
+- Contact quality
+- Turkey presence
+- Existing Turkey distributor
+- Potential channel conflict
+- Sanctions-screening status
+- Trade restrictions
+- Reputation
+- Commercial stability
+- Risk controls
+
+## Source-quality rules
+
+- Match every source to the resolved legal entity.
+- Record source date, access date, jurisdiction and claim supported.
+- Do not treat a database absence as proof of a clean record.
+- Do not treat a self-declaration as independent verification.
+- Do not infer ownership, financial health or authorization.
+- Use `UNKNOWN` and state the exact document, authority or confirmation required.
+- Distinguish public-source diligence from legal, financial or on-site due diligence.
 
