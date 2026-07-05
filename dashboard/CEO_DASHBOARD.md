@@ -20,7 +20,15 @@ This is the single source of truth for portfolio status. Specialist agents propo
 | Validated pricing opportunities | 0 | UNKNOWN | — | UNKNOWN | Pricing Intelligence |
 | Open competitive gaps | 0 | UNKNOWN | — | UNKNOWN | Competition Intelligence |
 | Outreach-ready contacts | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Messages awaiting authorization | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Authorized next actions | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Expected response-rate range | UNKNOWN | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Expected meeting-probability range | UNKNOWN | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
 | Positive replies | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Meetings requested | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Meetings scheduled | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Follow-ups due | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
+| Paused / do-not-contact accounts | 0 | 0 | — | UNKNOWN | Outreach Intelligence |
 | Manufacturer meetings | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
 | Representation proposals | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
 | Signed agreements | 0 | 1 | — | UNKNOWN | Atlas CEO |
@@ -53,4 +61,3 @@ This is the single source of truth for portfolio status. Specialist agents propo
 | Competition Intelligence | UNKNOWN | NOT STARTED | UNKNOWN | PENDING |
 | Outreach Intelligence | UNKNOWN | NOT STARTED | UNKNOWN | PENDING |
 | Learning Intelligence | UNKNOWN | NOT STARTED | UNKNOWN | PENDING |
-
