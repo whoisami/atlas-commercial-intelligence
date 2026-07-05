@@ -30,22 +30,57 @@ This is the single source of truth for portfolio status. Specialist agents propo
 | Follow-ups due | 0 | UNKNOWN | — | UNKNOWN | Outreach Intelligence |
 | Paused / do-not-contact accounts | 0 | 0 | — | UNKNOWN | Outreach Intelligence |
 | Manufacturer meetings | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Manufacturer response rate | UNKNOWN | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Buyer conversations | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Pilot projects | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Quotations | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Orders | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Revenue | UNKNOWN | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Commission earned | UNKNOWN | UNKNOWN | — | UNKNOWN | Atlas CEO |
+| Recurring revenue | UNKNOWN | UNKNOWN | — | UNKNOWN | Atlas CEO |
 | Representation proposals | 0 | UNKNOWN | — | UNKNOWN | Atlas CEO |
 | Signed agreements | 0 | 1 | — | UNKNOWN | Atlas CEO |
 
 ## Current Decisions
 
-| Decision ID | Subject | Status | Date | Review trigger |
-|---|---|---|---|---|
+| Decision ID | Subject | Pursue | Status | Confidence | Date | Review trigger |
+|---|---|---|---|---:|---|---|
 
-## Priority Opportunities
+## CEO Resource Allocation
 
-| Rank | Opportunity | Atlas score | Stage | Next action | Owner | Due |
-|---:|---|---:|---|---|---|---|
+| Control | Current allocation | Source decision | Review date |
+|---|---|---|---|
+| Primary opportunity | UNKNOWN | UNKNOWN | UNKNOWN |
+| Maximum manufacturers to contact | UNKNOWN | UNKNOWN | UNKNOWN |
+| Maximum buyers to approach | UNKNOWN | UNKNOWN | UNKNOWN |
+| Weekly commercial targets | UNKNOWN | UNKNOWN | UNKNOWN |
+| Research-task cap | UNKNOWN | UNKNOWN | UNKNOWN |
+| Capital cap | UNKNOWN | UNKNOWN | UNKNOWN |
+| Current sprint objective | UNKNOWN | UNKNOWN | UNKNOWN |
 
-## Critical Risks and Unknowns
+## TOP 3 PRIORITIES
 
-| Risk or unknown | Impact | Mitigation | Owner | Due |
+| Rank | Priority | Commercial impact | Owner | Due | Completion evidence |
+|---:|---|---|---|---|---|
+
+## TOP 3 RISKS
+
+| Rank | Risk | Impact | Mitigation | Owner | Review trigger |
+|---:|---|---|---|---|---|
+
+## TOP 3 OPPORTUNITIES
+
+| Rank | Opportunity | Expected value | Probability | Time to revenue | Next gate |
+|---:|---|---|---|---|---|
+
+## NEXT COMMERCIAL ACTIONS
+
+| Priority | Action | Owner | Due | Completion evidence | Decision impact |
+|---:|---|---|---|---|---|
+
+## Critical Unknowns
+
+| Unknown | Decision impact | Verification owner | Due | Promotion / kill trigger |
 |---|---|---|---|---|
 
 ## Agent Delivery Status

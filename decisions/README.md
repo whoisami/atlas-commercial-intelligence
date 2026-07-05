@@ -2,5 +2,28 @@
 
 Only Atlas CEO may create, edit, supersede or retire decision files in this directory.
 
-Use `D###_short_title.md` and `templates/DECISION_TEMPLATE.md`. Each decision must cite accepted intelligence reports and be registered in `database/decisions.csv`. Specialist recommendations are not binding until a CEO decision file exists.
+## Naming
+
+Use:
+
+`DECISION_001.md`
+`DECISION_002.md`
+`DECISION_003.md`
+
+Use the next sequential number and start from `templates/DECISION_TEMPLATE.md`.
+
+## Authority
+
+Specialist recommendations are advisory. A commercial action is binding only when Atlas CEO creates a decision file that states:
+
+- Should Atlas pursue: YES or NO
+- GO / WATCH / NO-GO
+- Action authorized
+- Action prohibited
+- Resource caps
+- Owner and deadline
+- Review/kill trigger
+- Evidence reports
+
+Each decision is registered in `database/decisions.csv` when required by governance. Previous decisions remain binding until superseded.
 
