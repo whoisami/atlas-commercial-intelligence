@@ -23,3 +23,11 @@
 - **Controls added:** product-specific demand signals, buyer-type separation, buying-center mapping, public-data privacy rules, six-factor Priority Score, evidence-quality gate, hard GO thresholds and anti-padding rules for Top 100/25/10 portfolios.
 - **Data support:** Extended `database/buyers.csv` with buyer-role, demand, public-contact, scoring, evidence-quality and report-traceability fields.
 - **Outcome:** GO means eligible for contact enrichment and message planning only; it does not authorize contact.
+
+## Execution Summary — Pricing Intelligence Agent Upgrade
+
+- **Completed:** 2026-07-05
+- **Scope:** Upgraded the seven Pricing Intelligence operating contracts into Atlas's production financial-viability and commercial-model decision system.
+- **Controls added:** VERIFIED/ESTIMATED/UNKNOWN evidence states, normalized price comparisons, landed-cost and gross-to-net bridges, five-model analysis, cash/working-capital controls, scenario and break-even testing, six-factor Atlas Score and hard GO gates.
+- **Data support:** Extended `database/pricing.csv` with manufacturer, freight, customs, market-price, commission, margin, cash-flow, commercial-model, scoring and evidence-quality fields.
+- **Outcome:** GO identifies a financially viable model for controlled commercial validation; it does not authorize a quote, purchase, inventory or commitment.
