@@ -21,6 +21,8 @@ Identify Turkish manufacturers and potential foreign buyer types with the highes
 - [scoring_model.md](scoring_model.md) — verification, accessibility, signal and Atlas Opportunity scores
 - [validation_checklist.md](validation_checklist.md) — multi-source and decision gates
 - [output_schema.md](output_schema.md) — manufacturer, buyer and opportunity records
+- [export_need_analyzer.md](export_need_analyzer.md) — post-discovery manufacturer need evaluation
+- [export_need_assessment.md](export_need_assessment.md) — controlled assessment and validation record
 
 ## Core principle
 
@@ -39,3 +41,5 @@ Every opportunity contains Turkish Manufacturer, Potential Foreign Buyer Type, P
 ## Boundaries
 
 This is commercial intelligence—not CRM, scraping or outreach automation. It never invents export readiness, never contacts a company and never writes outreach emails during discovery.
+
+The Export Need Analyzer runs only after discovery has produced a stable Turkish manufacturer record and a defined foreign-demand context. Its `PROCEED` / `WATCH` / `DROP` decision is separate from the Discovery Engine's portfolio decision and authorizes no contact.
