@@ -33,6 +33,8 @@ Add source classes, verification score, accessibility score, signal score, signa
 
 File: `turkey_export/database/opportunities.csv`
 
+The fields below preserve the v2 upstream discovery-screening record. Its `atlas_opportunity_score` must not be overwritten with the final five-dimension score from [Opportunity Scoring](opportunity_scoring.md). Record the final post-match score in an [Opportunity Scorecard](opportunity_scorecard.md) until a separately authorized schema migration defines a distinct field.
+
 Every row must contain:
 
 | Required field | Rule |

@@ -1,5 +1,7 @@
 # Commercial Signal Scoring Model v2
 
+> **Scope:** This is the upstream discovery-screening model. It must not be used as the final post-match Atlas Opportunity Score. After accepted demand, manufacturer and match assessments exist, use [Opportunity Scoring](opportunity_scoring.md). Preserve historical v2 values; do not translate them into the five-dimension score.
+
 ## Evidence discipline
 
 Scores rank evidence-backed commercial probability. `UNKNOWN` earns zero until verified. `ESTIMATED` inputs are allowed only when method and limitation are stated. No score can turn a one-source claim into a verified fact.

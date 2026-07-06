@@ -18,7 +18,7 @@ Identify Turkish manufacturers and potential foreign buyer types with the highes
 
 - [discovery_engine.md](discovery_engine.md) — layered signal-to-opportunity workflow
 - [manufacturer_sources.md](manufacturer_sources.md) — public, industrial and signal source map
-- [scoring_model.md](scoring_model.md) — verification, accessibility, signal and Atlas Opportunity scores
+- [scoring_model.md](scoring_model.md) — upstream discovery-screening scores
 - [validation_checklist.md](validation_checklist.md) — multi-source and decision gates
 - [output_schema.md](output_schema.md) — manufacturer, buyer and opportunity records
 - [export_need_analyzer.md](export_need_analyzer.md) — post-discovery manufacturer need evaluation
@@ -28,6 +28,8 @@ Identify Turkish manufacturers and potential foreign buyer types with the highes
 - [demand_signal_assessment.md](demand_signal_assessment.md) — controlled demand-signal record and scorecard
 - [matching_engine.md](matching_engine.md) — buyer-manufacturer-intermediary fit evaluation
 - [matching_assessment.md](matching_assessment.md) — controlled match record and dual-path scorecard
+- [opportunity_scoring.md](opportunity_scoring.md) — final post-match first-revenue scoring procedure
+- [opportunity_scorecard.md](opportunity_scorecard.md) — controlled five-dimension opportunity scorecard
 
 ## Core principle
 
@@ -53,3 +55,5 @@ The Export Need Analyzer runs only after discovery has produced a stable Turkish
 The Demand Signal Engine runs before Turkish supply selection. It validates foreign demand and access evidence; it does not discover or match manufacturers.
 
 The Matching Engine runs only after accepted demand and manufacturer records exist. It evaluates a proposed direct or intermediary match and never discovers entities or authorizes contact.
+
+Opportunity Scoring runs after accepted demand, manufacturer and match assessments. Its five-dimension Atlas Opportunity Score is the final post-match score; the legacy v2 score remains an upstream discovery-screening value.
