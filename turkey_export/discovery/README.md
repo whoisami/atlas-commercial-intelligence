@@ -23,6 +23,8 @@ Identify Turkish manufacturers and potential foreign buyer types with the highes
 - [output_schema.md](output_schema.md) — manufacturer, buyer and opportunity records
 - [export_need_analyzer.md](export_need_analyzer.md) — post-discovery manufacturer need evaluation
 - [export_need_assessment.md](export_need_assessment.md) — controlled assessment and validation record
+- [demand_signal_engine.md](demand_signal_engine.md) — foreign-demand signal evaluation procedure
+- [demand_signal_assessment.md](demand_signal_assessment.md) — controlled demand-signal record and scorecard
 
 ## Core principle
 
@@ -32,6 +34,7 @@ Atlas searches for evidence of change, readiness, need and access. A company rec
 
 - **VERIFIED:** directly supported by a current primary or authoritative institutional source.
 - **ESTIMATED:** derived from identified public evidence; method and limitation are explicit.
+- **HYPOTHESIS:** plausible commercial interpretation requiring a named verification action.
 - **UNKNOWN:** not supported; no positive score is awarded.
 
 ## Required opportunity output
@@ -43,3 +46,5 @@ Every opportunity contains Turkish Manufacturer, Potential Foreign Buyer Type, P
 This is commercial intelligence—not CRM, scraping or outreach automation. It never invents export readiness, never contacts a company and never writes outreach emails during discovery.
 
 The Export Need Analyzer runs only after discovery has produced a stable Turkish manufacturer record and a defined foreign-demand context. Its `PROCEED` / `WATCH` / `DROP` decision is separate from the Discovery Engine's portfolio decision and authorizes no contact.
+
+The Demand Signal Engine runs before Turkish supply selection. It validates foreign demand and access evidence; it does not discover or match manufacturers.
