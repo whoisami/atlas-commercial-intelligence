@@ -13,16 +13,17 @@ This is not a lead-list tool. Buyer volume never substitutes for verified fit, e
 
 ## Workflow
 
-1. Build the Turkish manufacturer profile.
-2. Check export readiness.
-3. Select the best target country.
-4. Discover qualified foreign buyers.
-5. Score buyer opportunities.
-6. Draft manufacturer-specific outreach.
-7. Track meetings and outcomes.
-8. Recommend the next action and decide `PROCEED`, `WAIT` or `DROP`.
+1. Detect a commercial or industrial signal.
+2. Resolve and multi-source verify the organization behind it.
+3. Check manufacturing and export readiness.
+4. Select the best target country and potential foreign buyer type.
+5. Discover qualified foreign buyers or supply-chain partners.
+6. Score accessibility, timing, verification and commercial value.
+7. Draft outreach only after discovery authorization.
+8. Track meetings and outcomes.
+9. Recommend the next action and decide `PROCEED`, `WAIT` or `DROP`.
 
-The operational rules are in [playbook.md](playbook.md).
+Discovery rules are in [discovery/README.md](discovery/README.md). The broader operating rules are in [playbook.md](playbook.md).
 
 ## Opportunity output
 

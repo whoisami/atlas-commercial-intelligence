@@ -1,71 +1,116 @@
-# Manufacturer Scoring Model
+# Commercial Signal Scoring Model v2
 
-## Principles
+## Evidence discipline
 
-Scores measure suitability for export business development, not general company quality. No evidence means no points. Every manufacturer record must include a short rationale citing decisive evidence, deductions and unknowns.
+Scores rank evidence-backed commercial probability. `UNKNOWN` earns zero until verified. `ESTIMATED` inputs are allowed only when method and limitation are stated. No score can turn a one-source claim into a verified fact.
 
-## Export Potential Score — 0 to 100
+## Component scores — 0 to 100
 
-| Criterion | Weight | What earns points |
-|---|---:|---|
-| Manufacturing evidence | 15 | Verified factory, production processes, machinery or technical capability evidence |
-| Export readiness | 15 | Verified exports or credible export-readiness signals beyond translation alone |
-| Quality certifications | 10 | Relevant, credible and preferably verifiable quality systems or certifications |
-| Product complexity | 10 | Technical processes, tolerances, engineering content and non-commodity capability |
-| Repeat order potential | 10 | Components or assemblies likely to support recurring OEM demand |
-| Foreign buyer fit | 10 | Capabilities map to identifiable foreign OEM or industrial buyer needs |
-| Website credibility | 8 | Consistent identity, current technical content and credible company information |
-| Communication readiness | 8 | Foreign-language content and usable public business contact channel |
-| Sector attractiveness | 7 | Attractive Sprint 001 subsector with defensible technical demand |
-| Commission potential | 7 | Opportunity can plausibly support intermediary-led export development and repeat value |
-| **Total** | **100** | |
+### Manufacturing Score
 
-Score every criterion from 0–100, multiply by its weight and divide the sum by 100. Round only the final result to the nearest whole number.
+Measures direct evidence of real production, relevant processes, machinery/factory, technical complexity, quality control and repeatable OEM capability.
 
-## Discovery Confidence — 0 to 100
+### Export Readiness
 
-| Confidence factor | Weight |
+Measures verified exports, export documentation, quality requirements, language/logistics capability, international references and readiness to serve foreign accounts. English content alone is insufficient.
+
+### Commercial Accessibility Score
+
+Measures the probability Atlas can establish a commercial relationship within 90 days.
+
+| Factor | Weight |
 |---|---:|
-| Correct company identity and active website | 25 |
-| Direct manufacturing evidence | 30 |
-| Source diversity and corroboration | 20 |
-| Evidence recency and consistency | 15 |
-| Contact and company-presence verification | 10 |
+| Company size fit for external market development | 15 |
+| Export department maturity without being closed to partners | 15 |
+| Existing distributor/channel openness | 15 |
+| Decision-maker or category-owner accessibility | 15 |
+| Website/contact-channel usability | 10 |
+| Public openness: portal, partner notice or supplier registration | 15 |
+| Growth/capacity signal | 10 |
+| Explicit partnership signal | 5 |
 | **Total** | **100** |
 
-Discovery confidence measures evidence reliability, not commercial attractiveness.
+Large mature networks may score lower when they reduce Atlas access. Weak websites reduce only the digital-contact factor; verified industrial access can compensate.
 
-## Atlas Score — 0 to 100
+### Commercial Signal Score
 
-`Atlas Score = (Export Potential Score × 0.70) + (Discovery Confidence × 0.30)`
+Measures whether now is the right time to approach.
 
-This prevents a commercially appealing but weakly verified company from outranking well-evidenced candidates without making source volume the primary commercial criterion.
+| Signal dimension | Weight |
+|---|---:|
+| Signal strength and commercial relevance | 30 |
+| Recency against the defined freshness window | 20 |
+| Independent corroboration | 15 |
+| Evidence of investment/capacity/new line | 15 |
+| Evidence of new market, export hiring, fair or partnership search | 15 |
+| Actionability within 90 days | 5 |
+| **Total** | **100** |
 
-## Status rules
+No current signal means `0`, not a guessed neutral score. A supplier portal without a dated need is primarily Accessibility evidence and only a weak Signal input.
+
+### Revenue Potential
+
+Measures repeat-order economics, likely project/order scale, commission or margin fit and long-term account value. When price, volume or commercial terms are absent, score conservatively and label the estimate.
+
+### Execution Speed
+
+Measures whether Atlas can complete verification, obtain a mandate, reach the relevant party and secure a commercial conversation within 90 days.
+
+### Verification Score
+
+Measures evidence confidence across independent source classes.
+
+| Verification factor | Weight |
+|---|---:|
+| Entity identity and legal/operating consistency | 15 |
+| Factory or relevant operating-address verification | 15 |
+| Public business phone/contact verification | 10 |
+| Manufacturing or buyer-function evidence | 20 |
+| Institutional evidence: chamber/OSB/export/government/fair | 15 |
+| Certification evidence and scope | 10 |
+| LinkedIn/team/current-activity corroboration | 5 |
+| Source independence, recency and contradiction resolution | 10 |
+| **Total** | **100** |
+
+Source absence earns no points. A website can contribute to several supported facts but remains one source class.
+
+## Atlas Opportunity Score
+
+| Component | Weight |
+|---|---:|
+| Manufacturing Score | 20 |
+| Export Readiness | 15 |
+| Commercial Accessibility | 15 |
+| Commercial Signals | 15 |
+| Revenue Potential | 15 |
+| Execution Speed | 10 |
+| Verification Confidence | 10 |
+| **Total** | **100** |
+
+`Atlas Opportunity Score = Σ(component score × component weight) / 100`
+
+Round only the final score. Every component requires an evidence state and rationale.
+
+## Decision rules
 
 ### PROCEED
 
-All hard gates pass, `export_potential_score >= 70`, `discovery_confidence >= 70` and `atlas_score >= 70`.
-
-Hard gates:
-
-- real manufacturing evidence;
-- export activity or a credible export-readiness signal;
-- clear fit with an allowed product capability;
-- enough public data for later outreach preparation;
-- at least one usable public business contact channel;
-- source URLs supporting the decision.
+- Atlas Opportunity Score at least 75;
+- Verification Score at least 70;
+- Commercial Accessibility at least 60;
+- Commercial Signal Score at least 50;
+- real manufacturing evidence for a named manufacturer;
+- no unresolved hard risk or channel conflict;
+- one executable next action within 90 days.
 
 ### WAIT
 
-The company appears relevant but has a missing or contradictory decision-critical fact, or any principal score is 50–69. The record must name the verification action that could move it to `PROCEED` or `DROP`.
+Atlas Opportunity Score 50–74, a threshold component is missing, the signal is uncorroborated/stale, or the entity/opportunity is commercially plausible but requires a named verification action.
 
 ### DROP
 
-Any principal score is below 50, a hard disqualifier is verified, the entity is not a real manufacturer, capability fit is absent, sources are unverifiable, or material trust risk remains.
+Atlas Opportunity Score below 50; false/stale signal; disproven operating identity; no relevant manufacturing/buyer fit; inaccessible commercial route; unacceptable conflict or risk.
 
-## Score explanation format
+## Existing-data migration rule
 
-Use one concise rationale:
-
-`Positive evidence: [facts and sources]. Deductions: [missing or weak factors]. Unknowns: [decision-relevant gaps]. Status reason: [why the gates pass or fail].`
+Legacy v1 scores are not silently reinterpreted. Until every v2 component is recalculated from multi-source evidence, new fields are `UNKNOWN` and the opportunity cannot be promoted by the v2 engine.

@@ -1,8 +1,12 @@
-# Turkey Export Discovery Engine
+# Turkey Export Commercial Signal Discovery Engine v2
 
-Discovery Engine v1 identifies Turkish OEM metal-component manufacturers with credible export potential. It supplies qualified manufacturer intelligence to the wider Turkey Export module without contacting companies or producing outreach.
+Discovery Engine v2 does not begin with company names. It detects commercial signals, resolves the organizations behind those signals, verifies them across independent source classes and ranks collaboration opportunities by commercial probability.
 
-## Sprint 001 scope
+## Mission
+
+Identify Turkish manufacturers and potential foreign buyer types with the highest probability of a commercially useful relationship within 90 days—even when the manufacturer has weak digital presence.
+
+## Sprint scope
 
 - CNC Machining
 - Sheet Metal
@@ -12,23 +16,26 @@ Discovery Engine v1 identifies Turkish OEM metal-component manufacturers with cr
 
 ## Components
 
-- [discovery_engine.md](discovery_engine.md) — operating workflow and decision gates
-- [manufacturer_sources.md](manufacturer_sources.md) — source hierarchy and search routes
-- [scoring_model.md](scoring_model.md) — evidence-based scores and status rules
-- [validation_checklist.md](validation_checklist.md) — record-level quality gate
-- [output_schema.md](output_schema.md) — canonical CSV and portfolio outputs
+- [discovery_engine.md](discovery_engine.md) — layered signal-to-opportunity workflow
+- [manufacturer_sources.md](manufacturer_sources.md) — public, industrial and signal source map
+- [scoring_model.md](scoring_model.md) — verification, accessibility, signal and Atlas Opportunity scores
+- [validation_checklist.md](validation_checklist.md) — multi-source and decision gates
+- [output_schema.md](output_schema.md) — manufacturer, buyer and opportunity records
 
-## Required portfolio outputs
+## Core principle
 
-1. Top 100 discovered manufacturers
-2. Top 20 export-ready manufacturers
-3. Top 5 immediate candidates
-4. Reason for every `PROCEED` candidate, backed by evidence
+Atlas searches for evidence of change, readiness, need and access. A company record is created only after a signal can be associated with a real organization. Company websites are useful but never mandatory and never sufficient by themselves.
 
-Targets are maximum qualified outputs, not quotas. The engine reports fewer records when evidence is insufficient.
+## Evidence states
+
+- **VERIFIED:** directly supported by a current primary or authoritative institutional source.
+- **ESTIMATED:** derived from identified public evidence; method and limitation are explicit.
+- **UNKNOWN:** not supported; no positive score is awarded.
+
+## Required opportunity output
+
+Every opportunity contains Turkish Manufacturer, Potential Foreign Buyer Type, Potential Country, Commercial Model, Accessibility Score, Signal Score, Verification Score, Atlas Opportunity Score, Evidence Summary, Why Now, First Recommended Action and `PROCEED` / `WAIT` / `DROP`.
 
 ## Boundaries
 
-This is commercial intelligence, not a CRM, scraper or email system. It uses public business evidence, writes `UNKNOWN` for unverified data, requires source URLs for every company and never contacts anyone.
-
-Do not create outreach emails yet. Discovery ends with manufacturer qualification and a next-action recommendation.
+This is commercial intelligence—not CRM, scraping or outreach automation. It never invents export readiness, never contacts a company and never writes outreach emails during discovery.

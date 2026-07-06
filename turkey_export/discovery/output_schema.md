@@ -1,51 +1,71 @@
-# Discovery Output Schema
+# Commercial Signal Output Schema v2
 
-## Canonical database
+## Evidence state
+
+Every scored claim uses `VERIFIED`, `ESTIMATED` or `UNKNOWN`. Source URLs remain mandatory for named entities.
+
+## Manufacturer record
 
 File: `turkey_export/database/turkish_manufacturers.csv`
 
-| Field | Type / allowed values | Rule |
-|---|---|---|
-| company_name | Text | Verified public company name |
-| city | Text / `UNKNOWN` | Turkish operating city |
-| website | URL | Official website |
-| subsector | Pipe-separated values | Allowed Sprint 001 subsectors only |
-| capabilities | Pipe-separated text / `UNKNOWN` | Evidence-backed production capabilities |
-| export_evidence | Text / `UNKNOWN` | Verified export fact or specific readiness signal |
-| certifications | Pipe-separated text / `UNKNOWN` | State verification limits in rationale |
-| machinery_evidence | Text / `UNKNOWN` | Direct machinery or production-equipment evidence |
-| industries_served | Pipe-separated text / `UNKNOWN` | Evidence-backed end industries |
-| apparent_company_size | Text / `UNKNOWN` | Public estimate with basis in rationale |
-| foreign_language_readiness | Text / `UNKNOWN` | Languages and supporting evidence |
-| contact_channel | Text / `UNKNOWN` | Public business route only |
-| source_urls | Pipe-separated URLs | Required; direct evidence pages |
-| discovery_confidence | Integer 0–100 | Calculated under the confidence model |
-| export_potential_score | Integer 0–100 | Weighted commercial score |
-| atlas_score | Integer 0–100 | 70% potential + 30% confidence |
-| status | `PROCEED` / `WAIT` / `DROP` | Must satisfy status gates |
-| score_rationale | Text | Positive evidence, deductions, unknowns and status reason |
+Retain the v1 identity/capability fields and add:
+
+| Field | Rule |
+|---|---|
+| discovery_signal_type | Signal taxonomy value or `UNKNOWN` |
+| discovery_signal_date | ISO date or `UNKNOWN` |
+| signal_evidence_state | VERIFIED / ESTIMATED / UNKNOWN |
+| source_classes | Independent classes separated by `|` |
+| verification_score | 0–100 or `UNKNOWN` pending recalculation |
+| commercial_accessibility_score | 0–100 or `UNKNOWN` |
+| commercial_signal_score | 0–100 or `UNKNOWN` |
+| signal_summary | Evidence-backed signal and limitation |
+
+Legacy `discovery_confidence` remains for audit history but does not substitute for v2 Verification Score.
+
+## Buyer record
+
+File: `turkey_export/database/foreign_buyers.csv`
+
+Add source classes, verification score, accessibility score, signal score, signal date/state and signal summary. Buyer type must support OEMs, Tier suppliers, procurement/sourcing companies, contract-manufacturing buyers, purchasing offices, distributors, traders and supply-chain partners.
+
+## Opportunity record
+
+File: `turkey_export/database/opportunities.csv`
+
+Every row must contain:
+
+| Required field | Rule |
+|---|---|
+| turkish_manufacturer | Named verified entity or `UNKNOWN` while entity resolution is open |
+| potential_foreign_buyer_type | Verified/estimated buyer role |
+| potential_country | Country supported by evidence |
+| commercial_model | Plausible Atlas model; not authorization |
+| manufacturing_score | 0–100 with evidence state/rationale |
+| export_readiness_score | 0–100 with evidence state/rationale |
+| accessibility_score | 0–100 |
+| signal_score | 0–100 |
+| revenue_potential_score | 0–100 |
+| execution_speed_score | 0–100 |
+| verification_score | 0–100 |
+| atlas_opportunity_score | Weighted v2 score |
+| score_evidence_state | VERIFIED / ESTIMATED / UNKNOWN |
+| evidence_summary | Independent sources, decisive facts, deductions and unknowns |
+| why_now | Dated signal and commercial timing implication |
+| first_recommended_action | One specific reversible action |
+| decision | PROCEED / WAIT / DROP |
+
+The named foreign buyer may remain as supporting context, but the v2 decision is framed around a buyer type and country until buyer-specific need is verified.
 
 ## Data rules
 
-- UTF-8 CSV with one header row.
-- One row per distinct manufacturer entity.
-- Use `UNKNOWN`, never a blank, for unavailable business data.
-- Separate multiple values and URLs with `|`.
-- Do not place commas in unquoted fields.
-- Scores must be reproducible from the cited evidence and report scorecard.
+- UTF-8 CSV; one header; one distinct entity/opportunity per row.
+- `UNKNOWN` replaces unsupported data.
+- Multiple URLs/classes use `|`.
+- Every score is reproducible and its evidence state is explicit.
+- Existing v1 records keep their historical fields; v2 fields remain `UNKNOWN` until recalculated.
+- No record is upgraded solely because more URLs repeat the same claim.
 
-## Ranked report outputs
+## Portfolio outputs
 
-### Top 100 discovered manufacturers
-
-Include rank, company, city, subsector, Export Potential Score, Discovery Confidence, Atlas Score, status and concise reason.
-
-### Top 20 export-ready manufacturers
-
-Include only `PROCEED` records. Add export signal, strongest capability, quality evidence, public contact route, key risk and next validation action.
-
-### Top 5 immediate candidates
-
-Include only manufacturers with enough public data for later outreach preparation. Add the explicit selection reason, decisive evidence, main risk and next best action.
-
-If the qualified population is smaller than a target, report the actual count and reason; never pad the output.
+Rank commercial signals/opportunities by Atlas Opportunity Score only after v2 validation. Report fewer results rather than padding. Every `PROCEED` row explains why now and the first action.
