@@ -2,6 +2,8 @@
 
 Minimal decision view for the OEM Metal Components export module. Values must be supported by module records; use `UNKNOWN` when not verified.
 
+**Latest workflow run:** [`runs/sprint_001/00_run_summary.md`](../runs/sprint_001/00_run_summary.md) — Commercial Opportunity Workflow applied to Sprint 001 evidence; 0 of 20 opportunities meet the `PROCEED` gate. Decision and next action below are unchanged by this run.
+
 ## Commercial Signal Discovery Engine v2
 
 | Metric | Current | Target ceiling | Source / last update |
