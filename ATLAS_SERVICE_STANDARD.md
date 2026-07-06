@@ -1,5 +1,9 @@
 # Atlas Service Standard
 
+## Scope
+
+This standard applies only to **Turkey → World / Turkish Export Intelligence**. It does not apply to Foreign → Turkey, which is stable, out of scope for this standard, and must have its own, separate service standard defined later.
+
 Defines the official service standard of Atlas Commercial Intelligence.
 
 ## What Atlas is not
