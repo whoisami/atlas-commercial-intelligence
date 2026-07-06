@@ -67,6 +67,46 @@ Allowed states: VERIFIED / ESTIMATED / HYPOTHESIS / UNKNOWN.
 
 ## Export Need Score
 
+Complete the five requested commercial dimensions under [Export Need Scoring](export_need_scoring.md). Manufacturing Strength is consumed from the accepted technical assessment and is not recalculated here.
+
+### Detailed commercial scoring worksheet
+
+| Dimension | Subfactor | Maximum | Awarded | Evidence state | Evidence reference / rationale |
+|---|---|---:|---:|---|---|
+| Export Readiness | Verified export activity | 25 | 0 | UNKNOWN | UNKNOWN |
+| Export Readiness | Relevant certification and regulatory readiness | 20 | 0 | UNKNOWN | UNKNOWN |
+| Export Readiness | Export documentation, quality and traceability | 15 | 0 | UNKNOWN | UNKNOWN |
+| Export Readiness | International technical communication | 10 | 0 | UNKNOWN | UNKNOWN |
+| Export Readiness | Logistics and trade-term readiness | 15 | 0 | UNKNOWN | UNKNOWN |
+| Export Readiness | International market experience | 15 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | Capacity, facility or machinery investment | 25 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | New product or foreign-market objective | 20 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | Capacity-utilization or order-growth need | 20 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | Growth-linked hiring or organization change | 15 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | Signal recency and active timing | 10 | 0 | UNKNOWN | UNKNOWN |
+| Growth Need | Relevance of external support | 10 | 0 | UNKNOWN | UNKNOWN |
+| Business Development Need | Target-country coverage gap | 25 | 0 | UNKNOWN | UNKNOWN |
+| Business Development Need | Buyer and procurement-access gap | 25 | 0 | UNKNOWN | UNKNOWN |
+| Business Development Need | Export-sales capacity gap | 20 | 0 | UNKNOWN | UNKNOWN |
+| Business Development Need | Channel or partner gap | 15 | 0 | UNKNOWN | UNKNOWN |
+| Business Development Need | Defined business-development objective | 15 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Explicit partner, agent or distributor search | 30 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Existing external-channel model | 20 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Authorized international-sales route | 15 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Prior external collaboration | 15 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Territory and scope availability | 10 | 0 | UNKNOWN | UNKNOWN |
+| Partnership Openness | Partnership governance readiness | 10 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Commercial model and Atlas role clarity | 20 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Payer and revenue event clarity | 20 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Demand and commercial access strength | 20 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Repeatability and account value | 15 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Time to first revenue | 15 | 0 | UNKNOWN | UNKNOWN |
+| Atlas Revenue Potential | Capital, liability and downside fit | 10 | 0 | UNKNOWN | UNKNOWN |
+
+Evidence-state award caps: VERIFIED 100%; ESTIMATED 50%; HYPOTHESIS 25%; UNKNOWN 0% of each subfactor maximum.
+
+### Final weighted score
+
 | Dimension | Weight | Score | Weighted contribution | Evidence state | Rationale |
 |---|---:|---:|---:|---|---|
 | Manufacturing Strength | 15 | 0 | 0 | UNKNOWN | UNKNOWN |
@@ -119,6 +159,9 @@ Required for `WATCH`; otherwise write `NOT APPLICABLE`.
 - [ ] Same-owner sources were not counted as independent.
 - [ ] Certification holder, scope and validity were checked when used.
 - [ ] Evidence Quality and weighted score recalculate.
+- [ ] Every commercial dimension equals its subfactor sum.
+- [ ] Evidence-state caps are respected for every awarded subfactor.
+- [ ] Manufacturing Strength was consumed without recalculation.
 - [ ] `UNKNOWN` earned no points.
 - [ ] `PROCEED` passes score, quality, floors and hard gates.
 - [ ] `WATCH` has one bounded verification plan.

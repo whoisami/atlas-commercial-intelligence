@@ -23,6 +23,7 @@ Identify Turkish manufacturers and potential foreign buyer types with the highes
 - [output_schema.md](output_schema.md) — manufacturer, buyer and opportunity records
 - [export_need_analyzer.md](export_need_analyzer.md) — post-discovery manufacturer need evaluation
 - [export_need_assessment.md](export_need_assessment.md) — controlled assessment and validation record
+- [export_need_scoring.md](export_need_scoring.md) — five commercial scores and final decision rules
 - [demand_signal_engine.md](demand_signal_engine.md) — foreign-demand signal evaluation procedure
 - [demand_signal_assessment.md](demand_signal_assessment.md) — controlled demand-signal record and scorecard
 

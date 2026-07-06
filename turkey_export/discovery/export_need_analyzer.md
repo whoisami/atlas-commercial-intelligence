@@ -35,7 +35,7 @@ Every scored claim records source URL or stable record ID, source class, publica
 3. **Build evidence ledger.** Capture manufacturing, export, growth, business-development, partnership, commercial-model and contradiction evidence.
 4. **Apply hard gates.** Record PASS, WATCH or FAIL before scoring.
 5. **Score Evidence Quality.** Award only evidenced points factor by factor.
-6. **Score six dimensions.** Give each 0–100 with dimension-specific rationale; do not copy one generic score across factors.
+6. **Score dimensions.** Use [Export Need Scoring](export_need_scoring.md) for Export Readiness, Growth Need, Business Development Need, Partnership Openness and Atlas Revenue Potential. Consume Manufacturing Strength from the accepted manufacturing assessment; do not recalculate it here.
 7. **Test alternatives.** State at least one competing explanation for the apparent need and the evidence that would distinguish it.
 8. **Calculate and decide.** Apply thresholds and floors without discretionary overrides.
 9. **Record action.** `PROCEED` names one deeper validation step; `WATCH` names one bounded verification plan; `DROP` names the decisive disqualifier.
@@ -87,6 +87,8 @@ Use anchors consistently: 0 = disproven/absent/entirely `UNKNOWN`; 25 = weak ind
 `Atlas Export Need Score = Σ(dimension score × weight) / 100`
 
 Round only the final score. Keep component calculations unrounded. Need must be an evidenced capability or access gap, never inferred financial distress. English content and public contact details alone do not prove export readiness or partnership openness.
+
+The five commercial dimensions and final decision must be calculated under [Export Need Scoring](export_need_scoring.md). Manufacturing Strength remains an upstream technical score and hard floor; this scoring implementation does not redefine it.
 
 ## Decision
 
